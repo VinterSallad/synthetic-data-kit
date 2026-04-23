@@ -1,0 +1,10 @@
+services:
+  datakit:
+    build: .
+    container_name: datakit
+    volumes:
+      - .:/app
+    # Keeps the container running so you can exec into it
+    tty: true
+    stdin_open: true
+    command: /bin/bash
