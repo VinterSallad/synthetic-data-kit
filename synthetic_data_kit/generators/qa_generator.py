@@ -123,7 +123,8 @@ class QAGenerator:
             )
             
             messages = [
-                {"role": "system", "content": qa_prompt}
+                {"role": "system", "content": qa_prompt},
+                {"role": "user", "content": "Please generate the QA pairs from the text above following the JSON format specified."}
             ]
             all_messages.append(messages)
         
