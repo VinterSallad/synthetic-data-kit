@@ -119,7 +119,9 @@ def curate_qa_pairs(
     for batch in batches:
         batch_json = json.dumps(batch, indent=2)
         rating_prompt = rating_prompt_template.format(pairs=batch_json)
-        messages = [{"role": "system", "content": rating_prompt}]
+        messages = [{"role": "system", "content": rating_prompt},
++                   {"role": "user", "content": "Please rate the QA pairs from the text above following the JSON format specified."}]
+
         all_messages.append(messages)
     
     # Initialize counters and result containers
