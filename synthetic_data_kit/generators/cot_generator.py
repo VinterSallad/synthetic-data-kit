@@ -88,7 +88,9 @@ class COTGenerator:
         if verbose:
             print(f"Generating {num_examples} CoT examples (single call)...")
         
-        messages = [{"role": "system", "content": prompt}]
+        messages = [{"role": "system", "content": prompt},
+                    {"role": "user", "content": "Please generate the chain of thoughts from the text above following the JSON format specified."}]
+
         response = self.client.chat_completion(
             messages, 
             temperature=temperature,
