@@ -4,6 +4,8 @@ This fork is to archive the specific changes I made to this tool which was used 
 
 The changes are primarily docker configurations and modifications to source code to make it work with the prompt formatting requirements of Llamafactory.
 
+Note: changes here are only for the features used in the thesis project, the verbose flags and other commands have not yet been adapted to the Llamafactory format.
+
 # Synthetic Data Kit
 
 Tool for generating high-quality synthetic datasets to fine-tune LLMs.
