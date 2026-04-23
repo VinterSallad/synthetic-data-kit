@@ -1,3 +1,9 @@
+# Fork
+
+This fork is to archive the specific changes I made to this tool which was used for my Master Thesis.
+
+The changes are primarily docker configurations and modifications to source code to make it work with the prompt formatting requirements of Llamafactory.
+
 # Synthetic Data Kit
 
 Tool for generating high-quality synthetic datasets to fine-tune LLMs.
